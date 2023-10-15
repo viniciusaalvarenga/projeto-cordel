@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Sriracha;
+    src: url("Sriracha-Regular.ttf");
+}
+
+@font-face {
+    font-family: passOn;
+    src: url("PassionOne-Regular.ttf");
+}
+
+:root {
+    --font-sriracha: Sriracha;
+    --font-passon-reg: passOn;
+    --cor-1: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    height: 200px;
+}
+
+header > h1 {
+    font-family: var(--font-passon-reg);
+    font-size: 5em;
+    color: var(--cor-1);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+header > p {
+    color: var(--cor-1);
+    text-align: center;
+}
+
+header > p > a {
+    font-weight: bold;
+    color: var(--cor-1);
+    text-decoration: none;
+}
+
+header > p > a:hover {
+    color: var(--cor-1);
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--font-sriracha);
+    font-size: 1.7em;
+    padding-left: 25px;
+    padding-top: 50px;
+}
+
+section > p {
+    padding-bottom: 50px;
+}
+
+#sect-1 {
+    background-image: url("imagens/background001.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+    color: var(--cor-1);
+    height: 500px;
+}
+
+#sect-1 > p {
+    background-color: rgba(0, 0, 0, 0.185);
+    position: absolute;
+    width: 400px;
+    padding: 10px;
+}
+
+#sect-2 {
+    background-image: url("imagens/background002.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+    background-attachment: fixed;
+    color: var(--cor-1);
+    height: 500px;
+}
+
+#sect-2 > p {
+    background-color: rgba(0, 0, 0, 0.185);
+    width: 400px;
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    height: 40px;
+}
+
+footer > p {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color: var(--cor-1);
+    padding: 10px;
+    text-align: center;
+}
+
+footer > p > a {
+    color: var(--cor-1);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
