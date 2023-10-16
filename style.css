@@ -11,8 +11,10 @@
 }
 
 :root {
-    --font-sriracha: Sriracha;
-    --font-passon-reg: passOn;
+    --font1: Sriracha;
+    --font2: passOn;
+    --font3: Verdana, Tahoma, sans-serif;
+
     --cor-1: white;
 }
 
@@ -21,23 +23,28 @@
     padding: 0;
 }
 
+html, body {
+    background-color: lightgray;
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
-    height: 200px;
+    color: var(--cor-1);
+    text-align: center;
+    font-family: var(--font3);
 }
 
 header > h1 {
-    font-family: var(--font-passon-reg);
+    font-family: var(--font2);
+    font-variant: small-caps;
     font-size: 5em;
-    color: var(--cor-1);
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding-top: 50px;
 }
 
 header > p {
     color: var(--cor-1);
-    text-align: center;
+    padding-bottom: 50px;
 }
 
 header > p > a {
@@ -52,47 +59,54 @@ header > p > a:hover {
 }
 
 section {
-    font-family: var(--font-sriracha);
-    font-size: 1.7em;
-    padding-left: 25px;
-    padding-top: 50px;
+    font-family: var(--font1);
+    font-size: 2em;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
 }
 
 section > p {
-    padding-bottom: 50px;
+    padding-bottom: 2em;
 }
 
-#sect-1 {
+.normal {
+    background-color: white;
+}
+
+.sec-imagem {
+    background-color: rgb(80, 80, 80);
+    color: white;
+
+}
+
+.sec-imagem > p {
+    background-color: rgba(0, 0, 0, 0.432);
+    position: absolute;
+    width: 400px;
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+
+#imagem-1 {
     background-image: url("imagens/background001.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
     background-attachment: fixed;
-    color: var(--cor-1);
     height: 500px;
 }
 
-#sect-1 > p {
-    background-color: rgba(0, 0, 0, 0.185);
-    position: absolute;
-    width: 400px;
-    padding: 10px;
-}
 
-#sect-2 {
+#imagem-2 {
     background-image: url("imagens/background002.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center center;
     background-attachment: fixed;
-    color: var(--cor-1);
     height: 500px;
-}
-
-#sect-2 > p {
-    background-color: rgba(0, 0, 0, 0.185);
-    width: 400px;
-    padding: 10px;
 }
 
 footer {
@@ -102,7 +116,7 @@ footer {
 
 footer > p {
     font-family: sans-serif;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: var(--cor-1);
     padding: 10px;
     text-align: center;
